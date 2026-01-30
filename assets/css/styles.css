@@ -1,0 +1,26 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+#nav-rail {
+    transition: width 0.3s ease-in-out;
+}
+#nav-rail .nav-text {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#nav-rail:hover .nav-text {
+    opacity: 1;
+    width: auto;
+    margin-left: 1rem;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
